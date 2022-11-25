@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700,800&display=swap');
+* {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    z-index: 15;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+a{
+    color: #fff;
+}
+
+.items-res a{
+    display: none;
+}
+
+.logo-res {
+    display: none
+}
+
+.container{
+    margin-left:135px;
+    margin-top: 120px; 
+}
+.container h1{
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1em;
+}
+.container p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ADADAD;
+}
+.container span{
+    color: #B74CDC;
+}
+
+.button{
+    display: flex;
+    position: relative;
+    color: #ffffff;
+    background: rgb(215, 153, 253, 0.8);
+    padding: 0.1em;
+    height:55px;
+    border-radius: 15px;
+    width: 170px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.button li {
+    margin: 0 10px;
+}
+
+.fa-gamepad {
+    color: #333333;
+}
+
+.checkbtn {
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+}
+
+#spartan img{
+    position: relative;
+    bottom: 430px;
+    height: 900px;
+    margin: 357px;
+    margin-left: 750px;
+    margin-top: 12px;
+}
+
+.new span{
+    position:fixed;
+    top: 0px;
+    font-size: 10px;
+    margin-top: 20px;
+    right: 1067px;
+    z-index: 10;
+}
+/* --- NAVBAR STYLES ---  */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100px;
+    color: #fff;
+}
+
+.logo {
+    margin-left: 80px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.items {
+    display: flex;
+    font-size: 19px;
+    font-weight: 400;
+    margin-right: 80px;
+    
+}
+
+.items li {
+    margin: 0 5px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.items li a {
+    padding: 0 17px;
+}
+
+.items li:hover, li.active {
+    background-color: #BC5CDE;
+    border-radius: 16px;
+}
+
+.items-left, .items-res {
+    margin-right: 40px;
+    font-size: 22px;
+    color: #fff;
+    display: flex;
+}
+
+.items-left li, .items-res li{
+    margin: 0 15px;
+    
+}
+
+/* ICONS STYLES  */
+
+.fa-message {
+    position: relative;
+    color: #BC5CDE;
+    font-size: 25px;
+    right: 100px;
+    bottom: 20px;
+}
+
+
+/*  */
+/* SQUARES STYLES */
+.squares,.squares2,.squares3,.squares4,.squares5{
+    position: absolute;
+    background: -webkit-linear-gradient(120deg, #8A00DA,#520081, #1f0031);
+    width: 200px;
+    height: 200px;
+    opacity: 0.4;
+    rotate: 120deg;
+    top: -10px;
+    left: -68px;
+    z-index: 0;
+}
+
+.squares2 {
+    top: -120px;
+    left: 1300px;
+    rotate: 20deg;
+}
+.squares3 {
+    top: 500px;
+    left: 860px;
+    rotate: -50deg;
+    z-index: 0;
+}
+.squares4 {
+    top: 850px;
+    left: 300px;
+    rotate: 20deg;
+}
+
+.squares5 {
+    top: 500px;
+    left: 1850px;
+    rotate: 120deg;
+}
+
+
+/* Responsive Navbar  */
+
+@media (max-width: 1120px) {
+    .logo {
+        position: relative;
+        font-size: 17px;
+        left: -20px;
+    }
+    nav ul li a {
+        font-size: 17px;
+    }
+    .items-left {
+        font-size: 19px;
+    }
+
+    .fa-house, .fa-paperclip, .fa-list, .fa-envelope {
+        display: none
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container h1{
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .container p {
+        text-align: center;
+    }
+
+    .container .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    .spartan img{
+        position: relative;
+        width: 500px;
+        height: 20px;
+        margin: 0px auto;
+    }
+
+}
+
+@media (max-width: 878px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .items {
+        transform: translatex(-100%);
+    }
+
+    ul {
+        position: fixed;
+        width: 38%;
+        height: 100vh;
+        top: 95px;
+        text-align: center;
+        transition: all .5s;
+        top: -10px;
+        z-index: 100;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.2);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 60px;
+        
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-align: center;
+        padding: 200px;
+    }
+
+    .responsive {
+        display: flex;
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .items{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .items-left {
+        display: inline-flex;
+
+    }
+
+    .items-res a{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .items li:hover, li.active {
+        background-color: rgb(207, 95, 252);
+        border-radius: 16px;
+        color: #fff;
+    }
+    
+    .logo-res {
+        display: block;
+        position: relative;
+        text-align: center;
+        font-weight: 600;
+        font-size: 27px;
+        margin: 30px;
+    }
+    
+    .fa-xmark {
+        position: relative;
+        text-align: center;
+        margin-left: 20px;
+        color: #000;
+        cursor: pointer;
+        background: #fff;
+        border-radius: 20px;
+        padding: 4px 5px 4px 5px;
+        top: 5px;
+    }
+
+    .fa-house, .fa-paperclip, .fa-list, .fa-envelope {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 414px) {
+    ul {
+        width: 50%;
+    }
+}

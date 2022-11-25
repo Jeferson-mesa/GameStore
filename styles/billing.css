@@ -1,0 +1,303 @@
+h1 {
+  width: 80%;
+  margin: auto;
+}
+
+/* .main-container {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(2, 60% 40% minmax(600px, 1fr));
+} */
+
+.main-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 95%;
+  max-width: 1920px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+
+/* PERSONAL DATA */
+
+.part-left {
+  margin: 0px 0px 0px 0px;
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.container-tittle-billing {}
+
+.title-billing {
+  font-size: 50px;
+  margin: 0px 0px 25px 18px;
+}
+
+.personal-data {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  gap: 30px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#name {
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 40px;
+  margin: 0px 0px 25px 0px;
+  box-sizing: border-box;
+}
+
+#lastName {
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 40px;
+  margin: 0px 0px 25px 0px;
+  box-sizing: border-box;
+}
+
+#adress {
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 32px;
+  padding: 40px;
+  margin: 0px 0px 25px 0px;
+  box-sizing: border-box;
+}
+
+/* PAYMENT METHODS */
+
+.title-pay-meth {
+  font-size: 50px;
+  margin: 0px 0px 25px 18px;
+}
+
+.debit-credit-cards {
+  display: flex;
+  margin: 10px 0px 30px 0px;
+}
+
+/* CARD NUMBER */
+.payment {
+  background-color: #424242CC;
+  border: 1px solid #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.card-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+#card-number {
+  height: 20px;
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0px 30px 0px;
+  font-size: 21px;
+}
+
+/* EXPIRATION DATE */
+
+.expiration-date-CVV {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  box-sizing: border-box;
+}
+
+.cont-expiration-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#expiration-date {
+  height: 20px;
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0px 30px 0px;
+  font-size: 21px;
+}
+
+#CVV {
+  height: 20px;
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0px 30px 0px;
+  font-size: 21px;
+}
+
+/* CARD NAME */
+
+.card-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+#card-name {
+  height: 20px;
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 21px;
+}
+
+/* CONTAINER PAYPAL */
+
+.container-paypal {
+  display: flex;
+  background-color: #424242CC;
+  border: 1px solid #fff;
+  padding: 30px;
+  margin: 40px 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* CONTAINER EFECTY */
+
+.container-efecty {
+  display: flex;
+  background-color: #424242CC;
+  border: 1px solid #fff;
+  padding: 30px;
+  margin: 40px 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.container-whatsApp {
+  display: flex;
+  background-color: #424242CC;
+  border: 1px solid #fff;
+  padding: 30px;
+  margin: 40px 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
+
+/* PART RIGHT */
+
+/* FAR CRY 6 */
+.part-right {
+  background-color: #424242CC;
+  height: 700px;
+  width: 80%;
+  margin: 0px 0px 0px 100px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.far-cry-6-info-pay {
+  display: grid;
+  grid-template-columns: repeat(2, 30% 70%);
+  padding: 20px;
+}
+
+.text-information {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+/* BATTLEFIELD 4  */
+
+.battlefield-4-info-pay {
+  display: grid;
+  grid-template-columns: repeat(2, 30% 70%);
+  padding: 20px;
+}
+
+
+
+/* RIGHT DOWN */
+
+.total-price-section {
+  display: grid;
+  grid-template-columns: repeat(2, 50% 50%);
+  font-size: 25px;
+  margin: 30px 0px 20px 0px;
+}
+
+.total-price-section h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.button-pay {
+  display: flex;
+  justify-content: center;
+  border-radius: 35px;
+  width: 60%;
+  margin: auto;
+  background-color: #BC5CDE;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 15px;
+  transition: 1s;
+}
+
+.button-pay:hover {
+  background-color: #D99BFF;
+}
+
+.terms-and-conditions {
+  text-align: justify;
+  width: 78%;
+  font-size: 25px;
+  margin: 50px auto;
+}
+
+.span-terms-and-conditions {
+  color: #D99BFF;
+}
+
+.privacy-policy {
+  color: #D99BFF;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 878px) {
+  .part-right {
+    width: 100%;
+  }
+}
